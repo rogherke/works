@@ -82,16 +82,20 @@
         }
         @media screen and (max-width:768px){
         .essential{
-            max-width: 100%;}
-        }
-
+            max-width: 100%;
+            margin-bottom: 5%
+            }
+        }  
         .label{
+            background: url(images/horizon13.jpg) center;
+            background-size: cover;
             background-color: rgba(255, 255, 255, 0.308);
             text-align:center;
             display: flex;
             flex-direction: column;
             justify-content: center;
             height: 100vh;
+            
         }
         .label li {
             text-align: center;
@@ -104,28 +108,26 @@
             text-decoration: none;  
         }
         .label1{
-            font-size: 400%;
+            font-size: 450%;
+            
         }
         .label2{
             font-size:225%;
-            padding: 22px;
+            padding: 30px;
         }
         .label3{
             font-size:120%;
-            padding: 5px;
+            padding: 10px;
         }
         .label4{
             width: 300px;
-            margin: 0 auto;
+            margin: 0 auto;   
         }
-        .essential figure{
-            /* max-width: 500px; */
-            margin: 20px auto;
-        } 
         .search{
-            font-size: 18px;
-            background:url(images/search-solid.svg) no-repeat right ;
+            font-size: 22px;
             margin: 40px 0;
+            border-radius: 8px;
+            border:none;
         }
         .drop_scroll{
             height: 10px;
@@ -134,6 +136,7 @@
             font-size: 40px;
             height: 10px;
             margin-top: 155px;
+            color: black;
             /* transition: height 0.2s ease;
             animation: more 0.75s ease-out 3s ; */
         }
@@ -143,11 +146,6 @@
             height: 410px;
             background:#d4dfe6;
         }   
-        /* ==========================================*/
-        @media screen and (max-width:768px){
-        .container{
-            display: none;}
-        }
         .space{
             height: 40px;
             width: 100%;
@@ -165,6 +163,11 @@
             margin:5px auto;
             background: #aaa095;
         }
+        @media screen and (max-width:768px){
+        .label_2{
+           font-size:200% ; } 
+        }  
+        /* ========================================= */
         .container li{
             font-size:50%;
             text-align: center;
@@ -193,11 +196,19 @@
             color: black;
             font-weight: bold;
         }
+        @media screen and (max-width:768px){
+        .col-md{
+            display: none;}
+        }
 /* ============================================================== */
         .container2{
             width: 100%;
             height: 1580px;
             background: #d4dfe6;
+        }
+        @media screen and (max-width:768px){
+        .row2 img{
+            display: none;}
         }
         .row2{
             width:700px;
@@ -208,9 +219,6 @@
             width: 100% ;
             margin-bottom: 30px;
             transform: translate(80px);
-            clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-            /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
-            /* background-color: #FFBC42; */
         } 
         .box1 img{
             height: 350px;
@@ -235,9 +243,6 @@
             margin-bottom: 30px;
             width: 100%;
             transform: translate(-80px);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
-            /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
-            /* background: #4F86C6; */
         }
         .box2 img{
             height: 350px;
@@ -262,9 +267,6 @@
             width: 98vw;
             margin-bottom: 30px;
             transform: translate(80px);
-            clip-path: polygon(0 0, 100% 0%, 70% 100%, 0% 100%);
-            /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
-            /* background: rgb(51, 175, 138); */
         } 
         .box3 img{
             height: 350px;
@@ -289,9 +291,6 @@
             margin-bottom: 50px;
             width: 100%;
             transform: translate(-80px);
-            clip-path: polygon(0 0, 100% 0%, 100% 100%, 30% 100%);
-            /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
-            /* background: #4F86C6; */
         }
         .box4 img{
             height: 350px;
@@ -311,6 +310,21 @@
             font-size: 20PX;
             text-emphasis: left;
         }    
+        @media screen and (max-width:768px){
+        .box1, .box2, .box3, .box4{
+            transform:none;
+            width:100%}
+        }  
+
+        @media screen and (max-width:768px){
+        .box1 img, .box2 img, .box3 img, .box4 img{
+            width: 100%;}    
+        }  
+
+        @media screen and (max-width:768px){
+        .introduction1, .introduction2, .introduction3, .introduction4 {
+            display: none;}
+        }  
 /* ======================================================================= */
         footer{
             background-color:rgba(142, 192, 228, 0.822);
@@ -325,6 +339,11 @@
             margin: 50px;
             display:flex;
         }
+        @media screen and (max-width:768px){
+        .foot{
+            max-width: 100%;
+            text-align:center; } 
+        }    
         .about{
             width: 500px;
         }
@@ -377,16 +396,22 @@
         }
         .Community a{
             display: flex;
-            width: 36px;
+            width: 18px;
             margin: 5px;        
-            font-size: 20px;
+            font-size: 24px;
+            text-decoration:none;
             color: #454552;;
         }
         .Community a:hover{
             background: rgb(58, 130, 197);
             Color: gold ;
-            box-shadow:1px #ffff;
+            box-shadow:.1px #ffff;
         }
+        @media screen and (max-width:768px){
+        .Community {
+            max-width: 100%;
+            text-align: left; } 
+        }    
 /* =========================================================== */
     </style>
 </head>
@@ -400,8 +425,8 @@
                 </div>
                 <ul class="head">
                     <!-- <li><a href=""><i class="fas fa-home"><br>首頁</i></a></li> -->
-                    <li><a href="">旅遊訊息</a></li>
-                    <li><a href="">最新文章</a></li>
+                    <li><a href="RWD2.html">旅遊訊息</a></li>
+                    <li><a href="RWD2.html">最新文章</a></li>
                     <li><a href="">登入</a></li>
                 </ul>
             </nav>
@@ -412,7 +437,7 @@
             <li class="label1">Go To Your Trip</li>
             <li class="label2">What's on your list</li> 
             <li class="label3">Discover and save ideas for your next trip</li> 
-            <li class="label4"><input class="search" type="text" name=""> </li>
+            <li class="label4"><input type="search" class="search" placeholder="Search..."/></li>
             <li class="drop_scroll">
                 <a href="#Scroll-iconfont"><i class="fas fa-arrow-circle-down iconfont"></i></a>
             </li>
@@ -424,31 +449,31 @@
         <div data-aos="zoom-in">
         <div class="row">
             <div class="col-md">
-                <a href="" style="text-decoration:none;"><img src="images/travel.png" alt="">
+                <a href="RWD2.html" style="text-decoration:none;"><img src="images/travel.png" alt="">
                 <div class="col-md2">
                     <span>旅遊資訊</span></a>
                 </div>
             </div>
             <div class="col-md">
-                <a href="" style="text-decoration:none;"><img src="images/air-balloon.png" alt="">
+                <a href="RWD2.html" style="text-decoration:none;"><img src="images/air-balloon.png" alt="">
                 <div class="col-md2">
                     <span>人氣景點</span></a>
                 </div>
             </div>
             <div class="col-md"> 
-                <a href="" style="text-decoration:none;"><img src="images/dish.png" alt="">
+                <a href="RWD2.html" style="text-decoration:none;"><img src="images/dish.png" alt="">
                 <div class="col-md2">
                     <span>美食分享</span></a>
                 </div>
             </div>
             <div class="col-md"> 
-                <a href="" style="text-decoration:none;"><img src="images/suitcase.png" alt="">
+                <a href="RWD2.html" style="text-decoration:none;"><img src="images/suitcase.png" alt="">
                 <div class="col-md2">
                     <span>熱門住宿</span></a>
                 </div>
             </div>
             <div class="col-md">
-                <a href="" style="text-decoration:none;"><img src="images/destination.png">
+                <a href="RWD2.html" style="text-decoration:none;"><img src="images/destination.png">
                 <div class="col-md2">
                     <span>行程交通</span></a>
                 </div>
@@ -542,18 +567,18 @@
 <script>
     AOS.init();
 
-    $(function () {       
-    $(".essential").vegas({
-    timer: false,
-    transition: 'fade',
-    slides: [
-        { src: 'images/horizon5.jpg' },
-        { src: 'images/horizon-food4.jpg', transition: 'zoomOut' },
-        { src: 'images/horizon12.jpg', transition:'swirlRight2' },
-        { src: 'images/horizon21.jpg', transition: 'slideRight2' }
-    ]
-    });
-});   
+//     $(function () {       
+//     $(".essential").vegas({
+//     timer: false,
+//     transition: 'fade',
+//     slides: [
+//         { src: 'images/horizon5.jpg' },
+//         { src: 'images/horizon-food4.jpg', transition: 'zoomOut' },
+//         { src: 'images/horizon12.jpg', transition:'swirlRight2' },
+//         { src: 'images/horizon21.jpg', transition: 'slideRight2' }
+//     ]
+//     });
+// });   
     $(function() {
     $('html').smoothScroll(500);
     });
