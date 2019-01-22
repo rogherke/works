@@ -129,28 +129,18 @@
             margin:5px auto;
             background: #aaa095;
         }
-        @media screen and (max-width:768px){
-        .label_2{
-           font-size:200% ; } 
-        }  
-        /* =============================== */
         .main{
             width: 100%;
             height: 1750px;
             background:#d4dfe6;
         }
-        @media screen and (max-width:768px){
-        .main{
-            text-align: center; } 
-        }  
-        /* =============================== */
         .row2{
             width:700px;
             justify-content:center;
         }
         .box1{
             display: flex;
-            width: 100% ;
+            width: 90% ;
             margin-bottom: 30px;
             transform: translate(80px);
         } 
@@ -160,23 +150,23 @@
             position: relative;
         } 
         .introduction1{
-            width: 600px;
+            width: 100%;
             height: 320px;
             margin: 40px;
         }
         .introduction1 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center
         }
         .introduction1 P{
-            font-size: 19PX;
+            font-size: 1.3rem;
         }
         .box2{
             display: flex;
             justify-content: flex-end;
             margin-bottom: 30px;
-            width: 100%;
+            width: 90%;
             transform: translate(-80px);
         }
         .box2 img{
@@ -185,24 +175,23 @@
             position: relative;
         } 
         .introduction2{
-            width: 600px;
+            width:100%;
             height: 200px;
             margin: 40px;
             
         }
         .introduction2 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center
         }
         .introduction2 P{
-            font-size: 15PX;
+            font-size: 1.2rem;
             text-emphasis: left;
-            line-height: 1.2em;
         }
         .box3{
             display: flex;
-            width: 100%; 
+            width: 90%; 
             margin-bottom: 30px;
             transform: translate(80px);
         } 
@@ -212,24 +201,23 @@
             position: relative;
         } 
         .introduction3{
-            width: 600px;
+            width: 100%;
             height: 200px;
             margin: 40px;
         }
         .introduction3 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center
         }
         .introduction3 P{
-            font-size: 18PX;
-            line-height: 1.4em;
+            font-size: 1.3rem;
         }
         .box4{
             display: flex;
             justify-content: flex-end;
             margin-bottom: 30px;
-            width: 100%;
+            width: 90%;
             transform: translate(-80px);
         }
         .box4 img{
@@ -238,33 +226,40 @@
             position: relative;
         } 
         .introduction4{
-            width: 600px;
+            width: 90%;
             height: 200px;
             margin: 40px;
         }
         .introduction4 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center
         }
         .introduction4 P{
-            font-size: 18PX;
+            font-size: 1.3rem;
             text-emphasis: left;
-            line-height: 1.3em;
         }
-        @media screen and (max-width:768px){
-        .box1, .box2, .box3, .box4{
-            transform:none;}     
-        }  
 
         @media screen and (max-width:768px){
+        .main{
+            height: 3300px;}
+        .label_2{
+            font-size:200% ; } 
+        .label_2::after {
+            width: 17%} 
+        .main{
+            text-align: center; }   
+        .box1, .box2, .box3, .box4{
+            transform:none;
+            width:100%;
+            flex-wrap: wrap;} 
         .box1 img, .box2 img, .box3 img, .box4 img{
             width: 100%;}    
-        }  
-
-        @media screen and (max-width:768px){
-        .introduction1, .introduction2, .introduction3, .introduction4 {
-            display: none;}
+        .introduction2, .introduction4{
+            order: 2;
+            height: 340px;}
+        .introduction3 {
+            height: 300px;}    
         }  
 /* ======================================================================= */
         footer{
@@ -276,15 +271,10 @@
         }
         .foot{
             width:1000px;
-            height: 145px;
+            height: 155px;
             margin: 50px;
             display:flex;
         }
-        @media screen and (max-width:768px){
-        .foot{
-            max-width: 100%;
-            text-align:center; } 
-        }  
         .about{
             width: 500px;
         }
@@ -322,8 +312,8 @@
             /* color: #c4884d; */
         }   
         .service p{
-            font-size: 15px;
-            line-height: .8em;
+            font-size:.9rem;
+            line-height:1.1rem;
             color: #454552;
         }    
         .Community{
@@ -349,10 +339,17 @@
             box-shadow:1px #ffff;
         }
         @media screen and (max-width:768px){
+        .foot{
+            max-width: 100%;
+            text-align:center;}  
+        .service {
+            margin-right: 5%;
+            font-size:.8rem;
+            line-height:1.1rem;}       
         .Community {
             max-width: 100%;
             text-align: left; } 
-        }    
+        }      
 /* ========================================================= */
     </style>
 </head>
@@ -361,8 +358,8 @@
         <div class="wrapper">
             <nav>
                 <div class="brand">
-                    <a href="RWD.html"><img src="images/logo.png" alt=""></a>   
-                    <a href="RWD.html"><img src="images/logo2.png" alt=""></a>                   
+                    <a href="Horizon.html"><img src="images/logo.png" alt=""></a>   
+                    <a href="Horizon.html"><img src="images/logo2.png" alt=""></a>                   
                 </div>
                 <ul class="head">
                     <!-- <li><a href=""><i class="fas fa-home"><br>首頁</i></a></li> -->
@@ -446,14 +443,14 @@
     <div class="foot">
         <div class="about">
             <h4>認識Horizon</h4><br>
-            <a href="RWD4.html"><P>關於Horizon</P></a> <br>
-            <a href=""><P>異業合作</P></a> <br>
-            <a href=""><P>常見問題與幫助</P></a> <br>
+            <a href="Horizon4.html"><P>關於Horizon</P></a> <br>
+            <a href="Horizon4.html"><P>異業合作</P></a> <br>
+            <a href="Horizon4.html"><P>常見問題與幫助</P></a> <br>
         </div>
         <div class="terms">
             <h4>網站條款</h4><br>
-            <a href=""><p>使用條款</p></a>
-            <a href=""><p>隱私權保護政策</p></a>
+            <a href="Horizon4.html"><p>使用條款</p></a>
+            <a href="Horizon4.html"><p>隱私權保護政策</p></a>
         </div>
         <div class="service">
             <h4>聯絡資訊</h4><br>
@@ -464,9 +461,9 @@
         </div>   
         <div class="Community">
             <h4>社群媒體</h4>
-            <a href=""><i class="fab fa-facebook-square"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href="Horizon4.html"><i class="fab fa-facebook-square"></i></a>
+            <a href="Horizon4.html"><i class="fab fa-instagram"></i></a>
+            <a href="Horizon4.html"><i class="fab fa-twitter-square"></i></a>
         </div>        
     </div>  
 </footer>

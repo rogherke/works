@@ -125,7 +125,7 @@
             margin: 0 auto;   
         }
         .search{
-            font-size: 22px;
+            font-size: 25px;
             margin: 40px 0;
             border-radius: 8px;
             border:none;
@@ -138,8 +138,6 @@
             height: 10px;
             margin-top: 155px;
             color: black;
-            /* transition: height 0.2s ease;
-            animation: more 0.75s ease-out 3s ; */
         }
 /* ===================================================== */
         .container{
@@ -164,11 +162,6 @@
             margin:5px auto;
             background: #aaa095;
         }
-        @media screen and (max-width:768px){
-        .label_2{
-           font-size:200% ; } 
-        }  
-        /* ========================================= */
         .container li{
             font-size:50%;
             text-align: center;
@@ -198,6 +191,10 @@
             font-weight: bold;
         }
         @media screen and (max-width:768px){
+        .container{
+            margin-bottom:-30%;}
+        .label_2{
+           font-size:200%; }    
         .col-md{
             display: none;}
         }
@@ -207,17 +204,13 @@
             height: 1580px;
             background: #d4dfe6;
         }
-        @media screen and (max-width:768px){
-        .row2 img{
-            display: none;}
-        }
         .row2{
             width:700px;
             justify-content:center;
         }
         .box1{
             display: flex;
-            width: 100% ;
+            width: 90% ;
             margin-bottom: 30px;
             transform: translate(80px);
         } 
@@ -226,23 +219,23 @@
             position: relative;
         } 
         .introduction1{
-            width: 600px;
+            width: 100%;
             height: 200px;
             margin: 40px;
         }
         .introduction1 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
         }
         .introduction1 P{
-            font-size: 20PX;
+            font-size: 1.4rem;
         }
         .box2{
             display: flex;
             justify-content: flex-end;
             margin-bottom: 30px;
-            width: 100%;
+            width: 90%;
             transform: translate(-80px);
         }
         .box2 img{
@@ -250,22 +243,22 @@
             position: relative;
         } 
         .introduction2{
-            width: 600px;
+            width: 100%;
             height: 200px;
             margin: 40px;
         }
         .introduction2 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
         }
         .introduction2 P{
-            font-size: 20PX;
+            font-size: 1.4rem;
             text-emphasis: left;
         }
         .box3{
             display: flex;
-            width: 98vw;
+            width: 90%;
             margin-bottom: 30px;
             transform: translate(80px);
         } 
@@ -274,23 +267,23 @@
             position: relative;
         } 
         .introduction3{
-            width: 600px;
+            width: 100%;
             height: 200px;
             margin: 40px;
         }
         .introduction3 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
         }
         .introduction3 P{
-            font-size: 20PX;
+            font-size: 1.4rem;
         }
         .box4{
             display: flex;
             justify-content: flex-end;
             margin-bottom: 50px;
-            width: 100%;
+            width: 90%;
             transform: translate(-80px);
         }
         .box4 img{
@@ -298,33 +291,31 @@
             position: relative;
         } 
         .introduction4{
-            width: 600px;
+            width: 90%;
             height: 200px;
             margin: 40px;
         }
         .introduction4 h3{
-            font-size: 30px;
+            font-size: 1.8rem;
             font-weight: bold;
             text-align: center;
         }
         .introduction4 P{
-            font-size: 20PX;
+            font-size: 1.4rem;
             text-emphasis: left;
         }    
+
         @media screen and (max-width:768px){
+        .container2{
+            height: 2600px;}    
         .box1, .box2, .box3, .box4{
             transform:none;
-            width:100%}
-        }  
-
-        @media screen and (max-width:768px){
+            width:100%;
+            flex-wrap: wrap;} 
         .box1 img, .box2 img, .box3 img, .box4 img{
             width: 100%;}    
-        }  
-
-        @media screen and (max-width:768px){
-        .introduction1, .introduction2, .introduction3, .introduction4 {
-            display: none;}
+        .introduction2, .introduction4{
+            order: 2;}
         }  
 /* ======================================================================= */
         footer{
@@ -340,11 +331,6 @@
             margin: 50px;
             display:flex;
         }
-        @media screen and (max-width:768px){
-        .foot{
-            max-width: 100%;
-            text-align:center; } 
-        }    
         .about{
             width: 500px;
         }
@@ -382,10 +368,10 @@
             /* color: #c4884d; */
         }   
         .service p{
-            font-size: 15px;
-            line-height: .8em;
+            font-size: 1rem;
+            line-height: 1.2rem;
             color: #454552;
-        }    
+        }
         .Community{
             width: 500px;
             list-style: none;
@@ -409,6 +395,11 @@
             box-shadow:.1px #ffff;
         }
         @media screen and (max-width:768px){
+        .foot{
+            max-width: 100%;
+            text-align:center;}  
+        .service {
+            margin-right: 4%}       
         .Community {
             max-width: 100%;
             text-align: left; } 
@@ -426,8 +417,8 @@
                 </div>
                 <ul class="head">
                     <!-- <li><a href=""><i class="fas fa-home"><br>首頁</i></a></li> -->
-                    <li><a href="RWD2.html">旅遊訊息</a></li>
-                    <li><a href="RWD2.html">最新文章</a></li>
+                    <li><a href="Horizon2.html">旅遊訊息</a></li>
+                    <li><a href="Horizon2.html">最新文章</a></li>
                     <li><a href="">登入</a></li>
                 </ul>
             </nav>
@@ -450,37 +441,37 @@
         <div data-aos="zoom-in">
         <div class="row">
             <div class="col-md">
-                <a href="RWD2.html" style="text-decoration:none;"><img src="images/travel.png" alt="">
+                <a href="Horizon2.html" style="text-decoration:none;"><img src="images/travel.png" alt="">
                 <div class="col-md2">
                     <span>旅遊資訊</span></a>
                 </div>
             </div>
             <div class="col-md">
-                <a href="RWD2.html" style="text-decoration:none;"><img src="images/air-balloon.png" alt="">
+                <a href="Horizon2.html" style="text-decoration:none;"><img src="images/air-balloon.png" alt="">
                 <div class="col-md2">
                     <span>人氣景點</span></a>
                 </div>
             </div>
             <div class="col-md"> 
-                <a href="RWD2.html" style="text-decoration:none;"><img src="images/dish.png" alt="">
+                <a href="Horizon2.html" style="text-decoration:none;"><img src="images/dish.png" alt="">
                 <div class="col-md2">
                     <span>美食分享</span></a>
                 </div>
             </div>
             <div class="col-md"> 
-                <a href="RWD2.html" style="text-decoration:none;"><img src="images/suitcase.png" alt="">
+                <a href="Horizon2.html" style="text-decoration:none;"><img src="images/suitcase.png" alt="">
                 <div class="col-md2">
                     <span>熱門住宿</span></a>
                 </div>
             </div>
             <div class="col-md">
-                <a href="RWD2.html" style="text-decoration:none;"><img src="images/destination.png">
+                <a href="Horizon2.html" style="text-decoration:none;"><img src="images/destination.png">
                 <div class="col-md2">
                     <span>行程交通</span></a>
                 </div>
             </div>
             <div class="col-md">
-                <a href="RWD2.html" style="text-decoration:none;"><img src="images/sharing-content.png" alt="">
+                <a href="Horizon2.html" style="text-decoration:none;"><img src="images/sharing-content.png" alt="">
                 <div class="col-md2">
                     <span>最新文章</span></a>
                 </div>
@@ -536,14 +527,14 @@
     <div class="foot">
         <div class="about">
             <h4>認識Horizon</h4><br>
-            <a href=""><P>關於Horizon</P></a> <br>
-            <a href=""><P>異業合作</P></a> <br>
-            <a href=""><P>常見問題與幫助</P></a> <br>
+            <a href="Horizon4.html"><P>關於Horizon</P></a> <br>
+            <a href="Horizon4.html"><P>異業合作</P></a> <br>
+            <a href="Horizon4.html"><P>常見問題與幫助</P></a> <br>
         </div>
         <div class="terms">
             <h4>網站條款</h4><br>
-            <a href=""><p>使用條款</p></a>
-            <a href=""><p>隱私權保護政策</p></a>
+            <a href="Horizon4.html"><p>使用條款</p></a>
+            <a href="Horizon4.html"><p>隱私權保護政策</p></a>
         </div>
         <div class="service">
             <h4>聯絡資訊</h4><br>
@@ -554,9 +545,9 @@
         </div>   
         <div class="Community">
             <h4>社群媒體</h4>
-            <a href=""><i class="fab fa-facebook-square"></i></a>
-            <a href=""><i class="fab fa-instagram"></i></a>
-            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href="Horizon4.html"><i class="fab fa-facebook-square"></i></a>
+            <a href="Horizon4.html"><i class="fab fa-instagram"></i></a>
+            <a href="Horizon4.html"><i class="fab fa-twitter-square"></i></a>
         </div>        
     </div>    
 </footer>
